@@ -1,0 +1,1 @@
+Synthetic enterprise benchmark design: 50 interconnected Acme Corp documents, 10 contradictions, 5 outdated documents, 20 multi-hop questions and ground-truth chunk IDs. Record actual Recall@5, MRR, NDCG@10, faithfulness, citation precision, latency and token metrics; never fabricate values.

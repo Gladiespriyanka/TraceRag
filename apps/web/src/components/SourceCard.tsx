@@ -1,0 +1,2 @@
+import{FileText}from"lucide-react";import type{Source}from"../api";
+export default function SourceCard({s,i,onClick,selected}:{s:Source;i:number;onClick:()=>void;selected:boolean}){return <button className={`source ${selected?"selected":""}`} onClick={onClick}><div><span className="num">{i+1}</span><FileText size={14}/><b>{s.filename}</b></div><p>{s.content.slice(0,190)}{s.content.length>190?"…":""}</p><small>RRF {s.retrieval_score.toFixed(4)} · Rerank {s.rerank_score.toFixed(3)}</small></button>}
